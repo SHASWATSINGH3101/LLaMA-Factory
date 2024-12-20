@@ -735,10 +735,10 @@ _register_template(
 
 # copied from llama2 template
 _register_template(
-    name="llama2_zh",
+    name="Longwriter_chat",
     format_user=StringFormatter(slots=[{"bos_token"}, "[INST] {{content}} [/INST]"]),
     format_system=StringFormatter(slots=["<<SYS>>\n{{content}}\n<</SYS>>\n\n"]),
-    default_system="You are a helpful assistant. 你是一个乐于助人的助手。",
+    default_system="You are a helpful assistant.",
 )
 
 
