@@ -1,4 +1,12 @@
 {
+  "bail_data":{
+    "hf_hub_url": "SHASWATSINGH3101/test_data",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
   "identity": {
     "file_name": "identity.json"
   },
