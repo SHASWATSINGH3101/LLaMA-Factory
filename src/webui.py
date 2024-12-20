@@ -21,7 +21,7 @@ def main():
     gradio_ipv6 = os.getenv("GRADIO_IPV6", "0").lower() in ["true", "1"]
     gradio_share = os.getenv("GRADIO_SHARE", "0").lower() in ["true", "1"]
     server_name = os.getenv("GRADIO_SERVER_NAME", "[::]" if gradio_ipv6 else "0.0.0.0")
-    create_ui().queue().launch(share=gradio_share, server_name=server_name, inbrowser=True)
+    create_ui().queue().launch(share=True, server_name=server_name, inbrowser=True)
 
 
 if __name__ == "__main__":
